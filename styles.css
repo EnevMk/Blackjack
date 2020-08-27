@@ -1,0 +1,47 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.backgr {
+    background-image: url('assets/bj-table.jpg');
+    background-size: cover;
+    height: 500px;
+    width: 75%;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid black;
+}
+
+div h3 {
+    color: lavenderblush;
+}
+
+.playtable {
+    height: 75%;
+}
+
+.btn {
+    margin: 9px 9px;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn:focus {
+    box-shadow: none !important;
+}
+
+.table {
+    margin: auto;
+    text-align: center;
+}
+
+#your-box img, #dealer-box img {
+    max-width: 32%;
+    max-height: 32%;
+    padding: 10px;
+    
+}
+#your-box, #dealer-box{
+    text-align: center;
+}

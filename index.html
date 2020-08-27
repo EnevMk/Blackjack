@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h2 class="d-flex justify-content-center">Blackjack game</h2>
+    <h3 class="d-flex justify-content-center" id="msg-window">Let's play</h3>
+
+
+    <div class="backgr container">
+        <br>
+        <div class="row">
+            <div class="col-xl-6 d-flex justify-content-center">
+                <h3>You: <span id="your-result">0</span></h3>
+            </div>
+            <div class="col-xl-6 d-flex justify-content-center">
+                <h3>Dealer: <span id="dealer-result">0</span></h3>
+            </div>
+
+        </div>
+        <div class="row playtable">
+            <div class="col-xl-6" id="your-box"></div>
+            <div class="col-xl-6" id="dealer-box"></div>
+        </div>
+        <div class="row butoni">
+            <div class="col-xl-12 butoni d-flex justify-content-center">
+                <button type="button" class="btn btn-primary" id="hit-button">Hit</button>
+                <button type="button" class="btn btn-warning" id="stand-button" disabled>Stand</button>
+                <button type="button" class="btn btn-danger" id="clear-button" disabled>Clear</button>
+                
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-6 ">
+                <table class="table table-sm ">
+                    <thead>
+                        <tr>
+
+                            <th scope="col">Wins</th>
+                            <th scope="col">Losses</th>
+                            <th scope="col">Draws</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td><span id="wins">0</span></td>
+                            <td><span id="losses">0</span></td>
+                            <td><span id="draws">0</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
